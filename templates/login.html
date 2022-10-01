@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet"href="/static/anmol.css">
+        <title> login</title>
+    </head>
+    <body>
+        <form method="POST" action="" >
+            {% csrf_token %}
+        <center>
+
+            
+        <div class="container">
+        <h1 id="login"><center>Login Page</center></h1>
+            <label id="email">Email</label><br><br>
+            <input type="text" placeholder="Enter your Email" id="email" name="email"><br><br>
+            <label id="user">Password</label><br><br>
+            <input type="password"placeholder="Enter your password" id="password" name="password"><br>
+            <button type="onclick"id="btn" >Login</a></button><br> 
+            {% comment %} <a href="http://127.0.0.1:8000/services/"id="forget" name="forget"> <button="onclick">Forget Password</a><br><br> {% endcomment %}
+            {% comment %} <a href="http://127.0.0.1:8000/logoutuser/"id="login1" name="login1"> <button type="onclick"id="btn">Login</a></button><br> {% endcomment %}
+            {% comment %} <a href="http://127.0.0.1:8000/signup/"id="create" name="create" button="onclick">Create new account</a> {% endcomment %}
+        </div>
+        </center>
+        </form>
+    </body>
+</html>
